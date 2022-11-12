@@ -1,0 +1,52 @@
+.home {
+    padding: 5%;
+}
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-section--texts {
+    width: 50%;
+    color: #434343;
+}
+.hero-section--texts h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+.hero-section--texts h1 span {
+    color: #A02279;
+}
+.hero-section--texts p {
+    width: 90%;
+    font-size: 18px;
+    line-height: 30px;
+}
+.search-field {
+    display: flex;
+    margin-top: 30px;
+    width: 85%;
+}
+.search-field input {
+    padding: 15px;
+    flex: 1;
+    color: #a3a3a3;
+    border: 1px solid #a3a3a3;
+    border-radius: 8px 0 0 8px;
+}
+.search-field button {
+    padding: 15px 13%;
+    color: #fff;
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%);
+    border: 1px solid #A02279;
+    border-radius: 0px 8px 8px 0px;
+}
+
+@media (max-width: 900px) {
+    .hero-section {
+        flex-wrap: wrap;
+    }
+    .hero-section--texts {
+        width: 100%;
+    }
+}
