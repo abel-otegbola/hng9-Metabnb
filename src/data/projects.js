@@ -1,19 +1,19 @@
-import s1 from "../imgs/projects/s1.png";
-import s2 from "../imgs/projects/s2.png";
-import s3 from "../imgs/projects/s3.png";
-import s4 from "../imgs/projects/s4.png";
-import s5 from "../imgs/projects/s5.png";
-import s6 from "../imgs/projects/s6.png";
-import s7 from "../imgs/projects/s7.png";
-import s8 from "../imgs/projects/s8.png";
-import s9 from "../imgs/projects/s9.png";
-import s10 from "../imgs/projects/s10.png";
-import s11 from "../imgs/projects/s11.png";
-import s12 from "../imgs/projects/s12.png";
-import s13 from "../imgs/projects/s13.png";
-import s14 from "../imgs/projects/s14.png";
-import s15 from "../imgs/projects/s15.png";
-import s16 from "../imgs/projects/s16.png";
+import s1 from "../imgs/projects/s1.webp";
+import s2 from "../imgs/projects/s2.webp";
+import s3 from "../imgs/projects/s3.webp";
+import s4 from "../imgs/projects/s4.webp";
+import s5 from "../imgs/projects/s5.webp";
+import s6 from "../imgs/projects/s6.webp";
+import s7 from "../imgs/projects/s7.webp";
+import s8 from "../imgs/projects/s8.webp";
+import s9 from "../imgs/projects/s9.webp";
+import s10 from "../imgs/projects/s10.webp";
+import s11 from "../imgs/projects/s11.webp";
+import s12 from "../imgs/projects/s12.webp";
+import s13 from "../imgs/projects/s13.webp";
+import s14 from "../imgs/projects/s14.webp";
+import s15 from "../imgs/projects/s15.webp";
+import s16 from "../imgs/projects/s16.webp";
 
 export const projects = [
     {
