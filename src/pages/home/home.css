@@ -64,7 +64,18 @@
     .hero-section--texts h1 {
         font-size: 40px;
     }
+    .hero-section--texts p {
+        width: 100%;
+    }
+    .search-field {
+        width: 100%;
+    }
+    .search-field input {
+        width: 70%;
+    }
     .search-field button {
-        padding: 15px 20px;
+        text-align: center;
+        padding: 15px;
+        width: 30%;
     }
 }
