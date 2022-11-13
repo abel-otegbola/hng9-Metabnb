@@ -1,10 +1,12 @@
 import "./project.css";
-import { FaStar } from "react-icons/fa";
+import { FaHeart, FaStar } from "react-icons/fa";
 
 const Project = ({ project }) => {
     return (
         <div className="project">
             <img src={project.img} alt="project" />
+
+            <FaHeart className="heart" />
 
             <div className="project-texts">
                 <div className="info">

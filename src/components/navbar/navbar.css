@@ -8,6 +8,7 @@
     align-items: center;
     background-color: #fff;
     padding: 15px 5%;
+    z-index: 10;
 }
 .navbar.scrolled {
     box-shadow: 0 3px 10px rgba(153, 153, 153, 0.315);

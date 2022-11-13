@@ -9,8 +9,11 @@ const Navbar = () => {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            if(window.scrollY > 39 ) {
+            if(window.scrollY > 49 ) {
                 setScroll("scrolled")
+            }
+            else {
+                setScroll("")
             }
         })
     }, [ setScroll ])

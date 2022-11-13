@@ -5,12 +5,20 @@
     border-radius: 10px;
     margin: 5px 0;
     overflow: hidden;
+    position: relative;
 }
 .project img {
     width: 100%;
     height: 240px;
     object-fit: cover;
     border-radius: 7px;
+}
+.project .heart {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    font-size: 18px;
+    color: #D7D7D7;
 }
 .project .info {
     display: flex;

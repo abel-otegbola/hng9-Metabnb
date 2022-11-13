@@ -1,6 +1,7 @@
 .App {
   font-family: 'Red Rose', cursive;
   margin-top: 7%;
+  font-size: 14px;
 }
 input {
   outline: 3px solid transparent;
