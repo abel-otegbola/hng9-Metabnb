@@ -1,5 +1,10 @@
 import "./home.css";
 import heroImg from "../../imgs/hero-img.png";
+import MBToken from "../../imgs/brands/MBToken.svg";
+import metamask from "../../imgs/brands/metamask.svg";
+import opensea from "../../imgs/brands/opensea.svg";
+import Project from "../../components/project/project";
+import { projects } from "../../data/projects";
 
 const Home = () => {
     return (
@@ -15,6 +20,32 @@ const Home = () => {
                 </div>
 
                 <img src={heroImg} alt="metabnb-hero"/>
+            </div>
+
+            <div className="brands">
+                <a href="/">
+                    <img src={MBToken} alt="MBToken" height="40px"/>
+                </a>
+                <a href="/">
+                    <img src={metamask} alt="MBToken" height="40px"/>
+                </a>
+                <a href="/">
+                    <img src={opensea} alt="MBToken" height="40px"/>
+                </a>
+            </div>
+
+            <div className="inspirations">
+                <h1>Inspiration for your next adventure</h1>
+
+                <div className="projects">
+                    {
+                        projects.filter(item => (item.id%2 === 0) ).map(project => {
+                            return (
+                                <Project project={project} key={project.id} />
+                            )
+                        })
+                    }
+                </div>
             </div>
         </div>
     )
