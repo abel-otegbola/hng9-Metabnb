@@ -63,9 +63,32 @@
 }
 .inspirations .projects {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-auto-flow: dense;
+}
+.nfts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 5%;
+    background-color: #A02279;
+    color: #fff;
+    line-height: 40px;
+}
+.nfts--texts {
+    width: 50%;
+}
+.nfts img {
+    width: 50%;
+    padding: 0 5%;
+}
+.nfts a {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    color: #A02279;
+    background-color: #fff;
 }
 
 @media (max-width: 1000px) {
@@ -79,6 +102,18 @@
     .hero-section img {
         width: 100%;
         padding: 50px 0;
+    }
+    .brands a img {
+        height: 25px;
+    }
+    .nfts {
+        flex-wrap: wrap;
+    }
+    .nfts--texts {
+        width: 75%;
+    }
+    .nfts img {
+        width: 75%;
     }
 }
 @media (max-width: 760px) {
@@ -98,5 +133,11 @@
         text-align: center;
         padding: 15px;
         width: 30%;
+    }
+    .brands a img {
+        height: 18px;
+    }
+    .nfts--texts {
+        width: 100%;
     }
 }

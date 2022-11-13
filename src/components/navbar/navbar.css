@@ -1,8 +1,16 @@
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 5%;
+    background-color: #fff;
+    padding: 15px 5%;
+}
+.navbar.scrolled {
+    box-shadow: 0 3px 10px rgba(153, 153, 153, 0.315);
 }
 .navbar nav {
     display: flex;
@@ -71,7 +79,7 @@
 
 @media (max-width: 760px) {
     .navbar {
-        padding: 5%;
+        padding: 15px 5%;
     }
     .navbar img {
         height: 22px;

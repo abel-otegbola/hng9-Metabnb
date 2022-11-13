@@ -1,13 +1,22 @@
 import "./navbar.css";
 import logo from "../../imgs/logo.png";
 import { FaBars } from "react-icons/fa"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
     const [menuToggle, setMenuToggle] = useState(false)
+    const [scroll, setScroll] = useState("")
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            if(window.scrollY > 39 ) {
+                setScroll("scrolled")
+            }
+        })
+    }, [ setScroll ])
 
     return (
-        <div className="navbar">
+        <div className={`navbar ${scroll}`}>
             <img src={logo} height="30px" alt="logo" />
             <nav className={(menuToggle) ? "active" : ""}>
                 <div className="nav-menu">

@@ -3,8 +3,10 @@ import heroImg from "../../imgs/hero-img.png";
 import MBToken from "../../imgs/brands/MBToken.svg";
 import metamask from "../../imgs/brands/metamask.svg";
 import opensea from "../../imgs/brands/opensea.svg";
+import nfts from "../../imgs/nfts.png";
 import Project from "../../components/project/project";
 import { projects } from "../../data/projects";
+
 
 const Home = () => {
     return (
@@ -24,13 +26,13 @@ const Home = () => {
 
             <div className="brands">
                 <a href="/">
-                    <img src={MBToken} alt="MBToken" height="40px"/>
+                    <img src={MBToken} alt="MBToken" height="35px"/>
                 </a>
                 <a href="/">
-                    <img src={metamask} alt="MBToken" height="40px"/>
+                    <img src={metamask} alt="MBToken" height="35px"/>
                 </a>
                 <a href="/">
-                    <img src={opensea} alt="MBToken" height="40px"/>
+                    <img src={opensea} alt="MBToken" height="35px"/>
                 </a>
             </div>
 
@@ -46,6 +48,16 @@ const Home = () => {
                         })
                     }
                 </div>
+            </div>
+
+            <div className="nfts">
+                <div className="nfts--texts">
+                    <h1>Metabnb NFTs</h1>
+                    <p>Discover our NFT gift cards collection. Loyal customers gets amazing gift cards which are traded as NFTs. These NFTs gives our cutomer access to loads of our exclusive services.</p>
+                    <a href="/">Learn more</a>
+                </div>
+
+                <img src={nfts} alt="nfts" />
             </div>
         </div>
     )
