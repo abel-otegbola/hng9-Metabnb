@@ -47,9 +47,13 @@
 
 .brands {
     background: #A02279;
-    padding: 10px 8%;
+    padding: 0px 6%;
     display: flex;
     justify-content: space-between;
+    overflow-x: hidden;
+}
+.brands a {
+    padding: 10px;
 }
 .inspirations {
     padding: 5%;
