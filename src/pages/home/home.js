@@ -1,4 +1,5 @@
 import "./home.css";
+import heroImg from "../../imgs/hero-img.png";
 
 const Home = () => {
     return (
@@ -12,6 +13,8 @@ const Home = () => {
                         <button>Search</button>
                     </div>
                 </div>
+
+                <img src={heroImg} alt="metabnb-hero"/>
             </div>
         </div>
     )

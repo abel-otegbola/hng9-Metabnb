@@ -33,7 +33,7 @@
     background-color: #f3f0f0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
     .navbar nav {
         display: none;
         flex-wrap: wrap;
@@ -64,5 +64,14 @@
         display: block;
         width: 100%;
         transition: 0.7s;
+    }
+}
+
+@media (max-width: 760px) {
+    .navbar {
+        padding: 5%;
+    }
+    .navbar img {
+        height: 22px;
     }
 }
