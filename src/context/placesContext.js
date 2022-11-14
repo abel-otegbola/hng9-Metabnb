@@ -1,10 +1,11 @@
-import { useState, createContext, useEffect } from "react";
+import { createContext, useEffect } from "react";
+import { useLocalStorage } from "../customHooks/useLocalStorage";
 import { placesData } from "../data/placesData";
 
 export const PlacesContext = createContext();
 
 const PlacesContextProvider = ({ children }) => {
-    const [places, setPlaces] = useState([])
+    const [places, setPlaces] = useLocalStorage("places")
 
     useEffect(() => {
         setPlaces(placesData)

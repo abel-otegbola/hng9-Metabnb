@@ -2,10 +2,12 @@ import "./navbar.css";
 import logo from "../../imgs/logo.png";
 import { FaBars } from "react-icons/fa"
 import { useEffect, useState } from "react";
+import ConnectWallet from "../connectWallet/connectWallet"
 
 const Navbar = () => {
     const [menuToggle, setMenuToggle] = useState(false)
     const [scroll, setScroll] = useState("")
+    const [isOpen, setOpen] = useState(false);
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
@@ -19,6 +21,7 @@ const Navbar = () => {
     }, [ setScroll ])
 
     return (
+        <>
         <div className={`navbar ${scroll}`}>
             <img src={logo} height="30px" alt="logo" />
             <nav className={(menuToggle) ? "active" : ""}>
@@ -28,10 +31,16 @@ const Navbar = () => {
                     <a href="/">NFTs</a>
                     <a href="/">Community</a>
                 </div>
-                <a className="cto-button" href="/">Connect wallet</a>
+                <button className="cto-button" onClick={() => setOpen(true)}>Connect wallet</button>
             </nav>
             <button className="nav-toggler" onClick={() => setMenuToggle(!menuToggle)}><FaBars /></button>
         </div>
+
+
+        <div className={`connect-wallet--modal ${isOpen ? "active" : ""}`}>
+            <ConnectWallet setOpen={setOpen} />
+        </div>
+        </>
     )
 }
 

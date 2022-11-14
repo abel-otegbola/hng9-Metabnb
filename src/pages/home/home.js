@@ -62,6 +62,7 @@ const Home = () => {
 
                 <img src={nfts} alt="nfts" />
             </div>
+
         </div>
     )
 }
