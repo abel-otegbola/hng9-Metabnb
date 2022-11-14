@@ -24,10 +24,10 @@ const Footer = () => {
 
             <ul>
                 <h3>Places</h3>
-                <li><a href="/">Castle</a></li>
-                <li><a href="/">Farms</a></li>
-                <li><a href="/">Beach</a></li>
-                <li><a href="/">Learn more</a></li>
+                <li><a href="/places">Castle</a></li>
+                <li><a href="/places">Farms</a></li>
+                <li><a href="/places">Beach</a></li>
+                <li><a href="/places">Learn more</a></li>
             </ul>
             
             <ul>

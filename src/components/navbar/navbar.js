@@ -24,7 +24,7 @@ const Navbar = () => {
             <nav className={(menuToggle) ? "active" : ""}>
                 <div className="nav-menu">
                     <a href="/">Home</a>
-                    <a href="/">Place to stay</a>
+                    <a href="/places">Place to stay</a>
                     <a href="/">NFTs</a>
                     <a href="/">Community</a>
                 </div>

@@ -2,6 +2,7 @@ import "./project.css";
 import { FaHeart, FaStar } from "react-icons/fa";
 
 const Project = ({ project }) => {
+
     return (
         <div className="project">
             <img src={project.img} alt="project" />

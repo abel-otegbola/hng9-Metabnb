@@ -1,0 +1,34 @@
+.places {
+    margin-top: 10%;
+}
+.categories {
+    padding: 0 10% 0 5%;
+    display: flex;
+    justify-content: flex-end;
+}
+.categories button {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #B4B4B4;
+    border-radius: 8px;
+}
+.categories button img {
+    margin-left: 20px;
+}
+.places--list {
+    padding: 5%;
+}
+.places--list .projects {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-flow: dense;
+}
+
+@media (max-width: 769px) {
+    .places {
+        margin-top: 100px;
+    }
+}
