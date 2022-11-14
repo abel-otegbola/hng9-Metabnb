@@ -1,23 +1,23 @@
-import "./project.css";
+import "./placeContainer.css";
 import { FaHeart, FaStar } from "react-icons/fa";
 
-const Project = ({ project }) => {
+const PlaceContainer = ({ place }) => {
 
     return (
-        <div className="project">
-            <img src={project.img} alt="project" />
+        <div className="place">
+            <img src={place.img} alt="place" />
 
             <FaHeart className="heart" />
 
-            <div className="project-texts">
+            <div className="place-texts">
                 <div className="info">
-                    <p>{project.title}</p>
-                    <p>{project.description}</p>
+                    <p>{place.title}</p>
+                    <p>{place.description}</p>
                 </div>
 
                 <div className="info">
-                    <p>{project.distance}km away</p>
-                    <p>available for {project.availability} stay</p>
+                    <p>{place.distance}km away</p>
+                    <p>available for {place.availability} stay</p>
                 </div>
 
                 <div className="star-rating">
@@ -32,4 +32,4 @@ const Project = ({ project }) => {
     )
 }
 
-export default Project;
+export default PlaceContainer;

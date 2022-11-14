@@ -1,4 +1,4 @@
-.project {
+.place {
     padding: 15px;
     padding-bottom: 10px;
     border: 1px solid #d7d7d7;
@@ -7,40 +7,40 @@
     overflow: hidden;
     position: relative;
 }
-.project img {
+.place img {
     width: 100%;
     height: 240px;
     object-fit: cover;
     border-radius: 7px;
 }
-.project .heart {
+.place .heart {
     position: absolute;
     top: 25px;
     right: 20px;
     font-size: 18px;
     color: #D7D7D7;
 }
-.project .heart.liked {
+.place .heart.liked {
     color: red;
 }
-.project .info {
+.place .info {
     display: flex;
     justify-content: space-between;
     font-size: 12px;
 }
-.project .info p {
+.place .info p {
     line-height: 5px;
 }
-.project .info:nth-child(1) p:nth-child(2) {
+.place .info:nth-child(1) p:nth-child(2) {
     font-weight: bold;
 }
-.project .info:nth-child(2) p:nth-child(1) {
+.place .info:nth-child(2) p:nth-child(1) {
     margin-right: 5px;
 }
-.project .star-rating {
+.place .star-rating {
     margin-top: 7px;
 }
-.project svg {
+.place svg {
     color: #A02279;
     font-size: 10px;
     margin-right: 5px;

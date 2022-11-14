@@ -61,7 +61,7 @@
 .inspirations h1 {
     text-align: center;
 }
-.inspirations .projects {
+.inspirations .places {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

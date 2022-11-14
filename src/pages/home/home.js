@@ -4,11 +4,14 @@ import MBToken from "../../imgs/brands/MBToken.svg";
 import metamask from "../../imgs/brands/metamask.svg";
 import opensea from "../../imgs/brands/opensea.svg";
 import nfts from "../../imgs/nfts.png";
-import Project from "../../components/project/project";
-import { projects } from "../../data/projects";
+import { PlacesContext } from "../../context/placesContext";
+import { useContext } from "react";
+import PlaceContainer from "../../components/placeContainer/placeContainer";
 
 
 const Home = () => {
+    const places = useContext(PlacesContext)
+
     return (
         <div className="home">
             <div className="hero-section">
@@ -39,11 +42,11 @@ const Home = () => {
             <div className="inspirations">
                 <h1>Inspiration for your next adventure</h1>
 
-                <div className="projects">
+                <div className="places">
                     {
-                        projects.filter(item => (item.id%2 === 0) ).map(project => {
+                        places.filter(item => (item.id%2 === 0) ).map(place => {
                             return (
-                                <Project project={project} key={project.id} />
+                                <PlaceContainer place={place} key={place.id} />
                             )
                         })
                     }

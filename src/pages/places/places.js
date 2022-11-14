@@ -1,20 +1,23 @@
-import Project from "../../components/project/project";
-import { projects } from "../../data/projects";
+import PlaceContainer from "../../components/placeContainer/placeContainer";
 import "./places.css";
 import filterIcon from "../../imgs/filter.svg"
+import { useContext } from "react";
+import { PlacesContext } from "../../context/placesContext";
 
 const Places = () => {
+    const places = useContext(PlacesContext)
+
     return (
-        <div className="places">
+        <div className="places--page">
             <div className="categories">
                 <button>Location <img src={filterIcon} alt="filter icon" width="20px" /></button>
             </div>
             <div className="places--list">
-                <div className="projects">
+                <div className="places">
                     {
-                        projects.map(project => {
+                        places.map(place => {
                             return (
-                                <Project project={project} key={project.id} />
+                                <PlaceContainer place={place} key={place.id} />
                             )
                         })
                     }

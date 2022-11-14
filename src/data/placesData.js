@@ -15,7 +15,7 @@ import s14 from "../imgs/projects/s14.webp";
 import s15 from "../imgs/projects/s15.webp";
 import s16 from "../imgs/projects/s16.webp";
 
-export const projects = [
+export const placesData = [
     {
         id: 1,
         title: "Desert king",

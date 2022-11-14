@@ -1,4 +1,4 @@
-.places {
+.places--page {
     margin-top: 10%;
 }
 .categories {
@@ -20,7 +20,7 @@
 .places--list {
     padding: 5%;
 }
-.places--list .projects {
+.places--list .places {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -28,7 +28,7 @@
 }
 
 @media (max-width: 769px) {
-    .places {
+    .places--page {
         margin-top: 100px;
     }
 }
