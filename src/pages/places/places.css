@@ -49,8 +49,8 @@
         right: 5%;
         padding: 20px;
         background-color: #fff;
-        box-shadow: -3px 3px 10px rgba(153, 153, 153, 0.243),
-                    3px 3px 10px rgba(153, 153, 153, 0.243);
+        box-shadow: -3px 3px 10px rgba(153, 153, 153, 0.131),
+                    3px 3px 10px rgba(153, 153, 153, 0.143);
         border-radius: 10px;
         z-index: 5;
     }
