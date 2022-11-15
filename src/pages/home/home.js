@@ -10,7 +10,7 @@ import PlaceContainer from "../../components/placeContainer/placeContainer";
 
 
 const Home = () => {
-    const places = useContext(PlacesContext)
+    const {places} = useContext(PlacesContext)
 
     return (
         <div className="home">

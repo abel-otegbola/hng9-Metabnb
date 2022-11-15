@@ -5,7 +5,7 @@ import { useContext, useState } from "react";
 import { PlacesContext } from "../../context/placesContext";
 
 const Places = () => {
-    const places = useContext(PlacesContext)
+    const {places} = useContext(PlacesContext)
     const [isOpen, setOpen] = useState(false)
 
     return (

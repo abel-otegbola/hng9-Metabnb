@@ -1,13 +1,16 @@
 import "./placeContainer.css";
 import { FaHeart, FaStar } from "react-icons/fa";
+import { useContext } from "react";
+import { PlacesContext } from "../../context/placesContext";
 
 const PlaceContainer = ({ place }) => {
+    const {likePlace} = useContext(PlacesContext);
 
     return (
         <div className="place">
             <img src={place.img} alt="place" />
 
-            <FaHeart className="heart" />
+            <FaHeart className={`heart ${place.liked ? "liked" : ""}`} onClick={() => likePlace(place.id)}/>
 
             <div className="place-texts">
                 <div className="info">
