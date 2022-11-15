@@ -1,4 +1,4 @@
-import { createContext, useEffect } from "react";
+import { createContext } from "react";
 import { useLocalStorage } from "../customHooks/useLocalStorage";
 import { placesData } from "../data/placesData";
 
